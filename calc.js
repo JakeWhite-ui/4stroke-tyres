@@ -49,6 +49,7 @@
     fill(id(ax + 'S'), speeds, 'V', T.any);
   });
   var stag = id('cStag'), elDot = id('cDot');
+  var sizeText = '', dotText = '';
   function geom(ax) {
     var w = +id(ax + 'W').value, a = +id(ax + 'A').value, r = +id(ax + 'R').value;
     var li = id(ax + 'L').value ? +id(ax + 'L').value : null;
@@ -80,16 +81,15 @@
     id(ax + 'Side').style.flexGrow  = String(g.side);
     id(ax + 'Rim').style.flexGrow   = String(g.rimMm);
     id(ax + 'Side2').style.flexGrow = String(g.side);
-    id(ax + 'PropL').textContent = T.sidewall + ' ' + nf(g.side, 1) + ' ' + T.mm;
-    id(ax + 'PropR').textContent = T.rim + ' ' + nf(g.rimMm, 1) + ' ' + T.mm;
+    id(ax + 'Spec').innerHTML = specs(g);
   }
-  function row(k, v) { return '<dt>' + k + '</dt><dd>' + v + '</dd>'; }
-  function specs(g, ax) {
-    var L = ax ? function (t) { return T.axLabel(ax, t); } : function (t) { return t; };
+  function row(k, v) { return '<li><span>' + k + '</span><b>' + v + '</b></li>'; }
+  function specs(g) {
     var h = '';
-    h += row(L(T.dia), nf(g.dia, 1) + ' ' + T.mm + ' · ' + nf(g.dia / 25.4, 1) + '″');
-    h += row(L(T.circ), nf(g.circ, 0) + ' ' + T.mm);
-    h += row(L(T.revs), nf(g.revs, 0));
+    h += row(T.dia,      nf(g.dia, 0) + ' ' + T.mm + ' · ' + nf(g.dia / 25.4, 1) + '″');
+    h += row(T.sidewall, nf(g.side, 0) + ' ' + T.mm);
+    h += row(T.circ,     nf(g.circ, 0) + ' ' + T.mm);
+    h += row(T.revs,     nf(g.revs, 0));
     if (g.li) h += row(T.load + ' ' + g.li, nf(LOAD[g.li]) + ' ' + T.kg + ' · ' + T.perSet.replace('{n}', nf(LOAD[g.li] * 4)));
     if (g.sp) h += row(T.speed + ' ' + g.sp, T.upTo.replace('{n}', nf(SPEED[g.sp])));
     return h;
@@ -103,11 +103,6 @@
     var gf = geom('f'), gr = geom('r');
     paintAxle('f', gf);
     if (on) paintAxle('r', gr);
-    
-    var h = on
-      ? specs(gf, 'f') + specs(gr, 'r')
-      : specs(gf);
-    id('cSpec').innerHTML = h;
     
     if (on) {
       var gap = gr.dia - gf.dia, pct = gap / gf.dia * 100;
@@ -127,13 +122,28 @@
       id('cAge').textContent = elDot.value.trim() ? T.dotBad : '';
     }
     
-    var sizeTxt = on
+    sizeText = on
       ? T.waFront.replace('{s}', label(gf)) + ' · ' + T.waRear.replace('{s}', label(gr))
       : label(gf);
-    var msg = T.waMsg.replace('{code}', sizeTxt);
-    if (dot) msg += ' ' + T.waDot.replace('{w}', dot.wk).replace('{y}', dot.year);
-    id('cWa').href = 'https://wa.me/971558720712?text=' + encodeURIComponent(msg);
+    dotText = dot ? T.waDot.replace('{w}', dot.wk).replace('{y}', dot.year) : '';
   }
+  
+  id('cWa').addEventListener('click', function (e) {
+    var size = document.getElementById('bSize');
+    if (!size) return;                       
+    e.preventDefault();
+    size.value = sizeText;
+    var note = document.getElementById('bNote');
+    if (dotText && note && note.value.indexOf(dotText) === -1) {
+      note.value = (note.value ? note.value.replace(/\s*$/, ' ') : '') + dotText;
+    }
+    var svc = document.getElementById('bSvc');
+    if (svc) for (var i = 0; i < svc.options.length; i++) {
+      if (svc.options[i].text === T.svcTyres) { svc.selectedIndex = i; break; }
+    }
+    document.getElementById('book').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(function () { size.focus({ preventScroll: true }); }, 450);
+  });
   AX.forEach(function (ax) {
     ['W', 'A', 'R', 'L', 'S'].forEach(function (f) {
       id(ax + f).addEventListener('change', render);
@@ -142,4 +152,20 @@
   stag.addEventListener('change', render);
   elDot.addEventListener('input', render);
   render();
+})();
+(function () {
+  'use strict';
+  var T = window.FOUR_I18N;
+  var form = document.getElementById('bookForm');
+  if (!T || !form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var val = function (i) { var el = document.getElementById(i); return el ? el.value.trim() : ''; };
+    var parts = [T.bkHi];
+    var svc = val('bSvc'); if (svc && svc !== T.svcAny) parts.push(T.bkSvc.replace('{v}', svc));
+    var car = val('bCar');  if (car)  parts.push(T.bkCar.replace('{v}', car));
+    var size = val('bSize');if (size) parts.push(T.bkSize.replace('{v}', size));
+    var note = val('bNote');if (note) parts.push(note);
+    window.open('https://wa.me/971558720712?text=' + encodeURIComponent(parts.join(' ')), '_blank', 'noopener');
+  });
 })();

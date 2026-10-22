@@ -113,12 +113,6 @@ header.stuck{background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-bac
 .hero-meta .num{font-size:clamp(36px,5vw,64px);line-height:1}
 .hero-r{position:relative;overflow:hidden;background:var(--bg-2)}
 .hero-r img{position:absolute;inset:-9% 0;width:100%;height:118%;object-fit:cover;will-change:transform}
-.burst{background:var(--bg-2);text-align:center;overflow:hidden}
-.burst .big{font-size:clamp(110px,26vw,380px);line-height:.8;letter-spacing:-.05em}
-.burst .rows{display:flex;justify-content:center;gap:clamp(18px,4vw,54px);flex-wrap:wrap;margin-top:40px}
-.burst .rows div{text-align:start}
-.burst .rows b{display:block;font-size:clamp(22px,3vw,38px);line-height:1.2;font-family:'Space Grotesk',sans-serif}
-.burst .note{margin-top:40px;color:var(--ink-2);font-size:15px}
 .strip{padding:0;overflow:clip}
 .strip-track{display:flex;gap:16px;width:max-content;will-change:transform}
 .strip-track img{height:clamp(260px,42vw,520px);width:auto;object-fit:cover;border-radius:2px}
@@ -144,7 +138,6 @@ header.stuck{background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-bac
 .rev footer{font-size:13px;color:var(--ink-2);margin-top:auto}
 .rev footer b{display:block;color:var(--ink);font-size:14px;font-weight:600;direction:ltr;unicode-bidi:isolate;text-align:right}
 .badge{display:inline-block;margin-top:6px;font-size:11px;border:1px solid var(--hair);border-radius:2px;padding:3px 7px}
-.find{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start}
 .hours{width:100%;border-collapse:collapse;margin-top:24px}
 .hours td{padding:11px 0;border-bottom:1px solid var(--hair);font-size:16px}
 .hours td:last-child{text-align:end;font-weight:600;font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate}
@@ -162,65 +155,95 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
 .ft-nav a{text-decoration:none}
 .ft-nav a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
 .ft-note{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);font-size:12.5px;line-height:1.9}
-.switch{display:inline-flex;align-items:center;gap:12px;min-height:44px;margin-top:40px;cursor:pointer;font-size:15px;font-weight:600;user-select:none}
+.burst{background:var(--bg-2);text-align:center;overflow:hidden}
+.burst .big{font-size:clamp(44px,11.5vw,168px);line-height:.92;letter-spacing:-.04em;font-weight:700;
+  font-family:'Space Grotesk',sans-serif;font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate;margin-top:24px}
+.days{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:44px}
+.days span{min-width:62px;padding:11px 12px;border:1px solid var(--accent);border-radius:2px;
+  background:var(--accent-wash);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.days span.today{background:var(--accent);color:var(--accent-ink);font-weight:700}
+.burst .note{margin-top:36px;color:var(--ink-2);font-size:15px}
+.burst .note b{color:var(--ink);font-weight:600}
+.center{text-align:center}
+.center .prose{margin-inline:auto}
+.switch{display:inline-flex;align-items:center;gap:12px;min-height:44px;margin-top:44px;cursor:pointer;font-size:15px;font-weight:600;user-select:none}
 .switch input{position:absolute;opacity:0;width:0;height:0}
-.switch .track{position:relative;width:48px;height:28px;flex-shrink:0;border:1px solid var(--hair);border-radius:999px;background:var(--bg-2);transition:background .2s,border-color .2s}
+.switch .track{position:relative;width:48px;height:28px;flex-shrink:0;border:1px solid var(--hair);border-radius:999px;background:var(--bg);transition:background .2s,border-color .2s}
 .switch .track::after{content:"";position:absolute;top:3px;inset-inline-start:3px;width:20px;height:20px;border-radius:50%;background:var(--ink-2);transition:transform .22s cubic-bezier(.22,1,.36,1),background .2s}
 .switch input:checked + .track{background:var(--accent);border-color:var(--accent)}
 .switch input:checked + .track::after{background:var(--accent-ink);transform:translateX(20px)}
 [dir="rtl"] .switch input:checked + .track::after{transform:translateX(-20px)}
 .switch input:focus-visible + .track{outline:2px solid var(--focus);outline-offset:3px}
-.calc{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:24px;align-items:stretch}
-#calc.stag .calc{grid-template-columns:1fr 1fr}
-#calc.stag #cOut{grid-column:1/-1}
-#pCmp,#cNote{grid-column:1/-1}
-.panel{background:var(--surface);border:1px solid var(--hair);border-radius:2px;padding:32px;display:flex;flex-direction:column}
-.phead{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-bottom:18px}
-.code{font-size:clamp(28px,4.1vw,58px);line-height:1;letter-spacing:-.03em;font-weight:700;
-  font-variant-numeric:tabular-nums;word-break:break-word;min-height:1em;
-  font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate}
-.prop{display:flex;height:12px;margin-top:24px;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+.ccards{display:grid;grid-template-columns:minmax(0,640px);justify-content:center;gap:16px;margin-top:28px}
+#calc.stag .ccards{grid-template-columns:1fr 1fr}
+.ccard{background:var(--surface);border:1px solid var(--hair);border-radius:2px;padding:32px;text-align:start}
+.phead{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.sizerow{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap;direction:ltr;margin-top:20px}
+.sizerow.row2{margin-top:14px}
+.sizerow label{display:flex;flex-direction:column;gap:7px;min-width:0;flex:1 1 0}
+.sizerow label > span{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.sizerow .sep{font-style:normal;font-weight:700;font-size:22px;color:var(--ink-2);padding-bottom:12px;flex:0 0 auto;
+  font-family:'Space Grotesk',sans-serif}
+.selw{position:relative;display:block}
+.selw::after{content:"";position:absolute;right:13px;top:50%;width:7px;height:7px;
+  border-right:1.5px solid var(--ink-2);border-bottom:1.5px solid var(--ink-2);
+  transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.sizerow select,.fld select,.fld input,.fld textarea{width:100%;min-height:52px;padding:12px 32px 12px 13px;
+  border:1px solid var(--hair);border-radius:2px;background:var(--bg-2);color:var(--ink);
+  font:600 18px/1.25 'Space Grotesk',sans-serif;font-variant-numeric:tabular-nums;
+  direction:ltr;text-align:left;appearance:none;-webkit-appearance:none;cursor:pointer}
+.fld input,.fld textarea{cursor:text;font-size:16px;font-weight:500;padding:14px 13px}
+.fld textarea{min-height:92px;resize:vertical;line-height:1.5}
+.sizerow select:focus-visible,.fld select:focus-visible,.fld input:focus-visible,.fld textarea:focus-visible{
+  outline:2px solid var(--focus);outline-offset:2px;border-color:var(--accent)}
+.fld input::placeholder,.fld textarea::placeholder{color:var(--ink-2);font-weight:400}
+.code{font-size:clamp(28px,3.6vw,46px);line-height:1;letter-spacing:-.03em;font-weight:700;margin-top:28px;
+  font-variant-numeric:tabular-nums;font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate}
+.prop{display:flex;height:11px;margin-top:18px;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
 .prop i{display:block;height:100%;transition:flex-grow .3s cubic-bezier(.22,1,.36,1)}
 .prop .sw{background:var(--accent)}
 .prop .rm{background:var(--ink-2)}
-.prop-l{display:flex;justify-content:space-between;gap:16px;margin-top:10px;
-  font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
-.sel{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.sel.sel2{grid-template-columns:1fr 1fr;margin-top:12px}
-.fld{display:flex;flex-direction:column;gap:8px;min-width:0}
-.fld label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
-.fld select,.fld input{width:100%;min-height:52px;padding:12px 34px 12px 14px;border:1px solid var(--hair);border-radius:2px;
-  background:var(--bg-2);color:var(--ink);font:600 18px/1.2 'Space Grotesk',sans-serif;
-  font-variant-numeric:tabular-nums;direction:ltr;text-align:start;appearance:none;-webkit-appearance:none;cursor:pointer}
-.fld input{cursor:text}
-.fld select:focus-visible,.fld input:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-color:var(--accent)}
-[dir="rtl"] .fld select{text-align:right;padding:12px 14px 12px 34px}
-[dir="rtl"] .fld input{text-align:right;padding:12px 14px}
-.fld .sw-wrap{position:relative}
-.fld .sw-wrap::after{content:"";position:absolute;inset-inline-end:14px;top:50%;width:8px;height:8px;
-  border-right:1.5px solid var(--ink-2);border-bottom:1.5px solid var(--ink-2);
-  transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.specs{list-style:none;margin:22px 0 0;padding:0}
+.specs li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--hair);font-size:15px}
+.specs li span{color:var(--ink-2)}
+.specs li b{font-weight:600;font-variant-numeric:tabular-nums;font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate;text-align:end}
 .cmp{margin-top:16px;background:var(--ink);color:var(--bg);border-radius:2px;padding:28px 32px;
   display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
 .cmp .cc{display:flex;flex-direction:column;gap:6px}
 .cmp .cc b{font-size:clamp(22px,2.6vw,34px);line-height:1;font-weight:700;
   font-family:'Space Grotesk',sans-serif;font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate}
 .cmp .cc span{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;opacity:.72}
-.verdict{margin-top:16px;padding:16px 20px;border:1px solid var(--hair);border-radius:2px;font-size:15px;line-height:1.5}
-.verdict.ok{border-inline-start:3px solid var(--accent)}
-.verdict.warn{background:var(--accent-wash);border-inline-start:3px solid var(--accent)}
-.spec{display:grid;grid-template-columns:1fr auto;margin:0;column-gap:24px}
-.spec dt,.spec dd{padding:11px 0;border-bottom:1px solid var(--hair);margin:0;font-size:15px}
-.spec dt{color:var(--ink-2)}
-.spec dd{text-align:end;font-weight:600;font-variant-numeric:tabular-nums;
-  font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate}
-.age{margin-top:20px;font-size:15px;color:var(--ink-2);min-height:1.5em}
+.verdict{margin-top:16px;padding:16px 20px;border:1px solid var(--hair);border-inline-start:3px solid var(--accent);
+  border-radius:2px;font-size:15px;line-height:1.5}
+.verdict.warn{background:var(--accent-wash)}
+.dotbar{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.dotbar .fld{flex:0 0 160px}
+.age{font-size:15px;color:var(--ink-2);padding-bottom:14px}
 .age b{color:var(--ink);font-weight:600}
-.calc-cta{margin-top:28px}
-.calc-cta .btn{width:100%;justify-content:center}
-.src{margin-top:auto;padding-top:20px;font-size:12.5px;line-height:1.7;color:var(--ink-2)}
-@media (max-width:899px){.calc,#calc.stag .calc{grid-template-columns:1fr}.cmp{padding:22px 20px;gap:12px}}
-@media (max-width:479px){.panel{padding:24px 20px}.sel{grid-template-columns:1fr 1fr}.cmp{grid-template-columns:1fr;text-align:start}}
+.ccta{margin-top:32px;text-align:center}
+.src{margin-top:18px;font-size:12.5px;line-height:1.7;color:var(--ink-2)}
+.book{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:56px;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--hair);border-radius:2px;padding:32px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fld{display:flex;flex-direction:column;gap:8px;min-width:0}
+.fld label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.fld + .fld{margin-top:12px}
+.frow .fld + .fld,.frow .fld{margin-top:0}
+.mapbox{margin-top:16px;border:1px solid var(--hair);border-radius:2px;overflow:hidden;line-height:0}
+.mapbox iframe{width:100%;height:280px;border:0;display:block;filter:grayscale(1) contrast(.95)}
+[data-theme="dark"] .mapbox iframe{filter:grayscale(1) invert(.92) hue-rotate(185deg) contrast(.9)}
+@media (max-width:899px){
+  .ccards,#calc.stag .ccards{grid-template-columns:1fr}
+  .book{grid-template-columns:1fr}
+  .cmp{padding:22px 20px;gap:12px}
+}
+@media (max-width:559px){
+  .ccard,.panel{padding:24px 20px}
+  .sizerow{gap:8px}
+  .sizerow .sep{font-size:18px;padding-bottom:13px}
+  .frow{grid-template-columns:1fr}
+  .cmp{grid-template-columns:1fr;text-align:start}
+}
 .logo{padding-block:7px}
 .hero-meta .tlink{display:inline-block;padding-block:8px}
 .ft-nav a{display:inline-block;padding:11px 2px}
@@ -309,13 +332,17 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
 <section class="burst" id="hours">
   <div class="wrap">
     <p class="lbl rv">ساعات العمل</p>
-    <p class="big num rv" id="big112" style="margin-top:24px">0</p>
-    <div class="rows rv">
-      <div><b class="num">16</b><span class="lbl">ساعة يوميًا</span></div>
-      <div><b class="num">7</b><span class="lbl">أيام في الأسبوع</span></div>
-      <div><b class="num">0</b><span class="lbl">أيام إجازة</span></div>
+    <p class="big rv">8:00&nbsp;&ndash;&nbsp;00:00</p>
+    <div class="days rv" id="daysRow">
+      <span data-d="1">الإثنين</span>
+      <span data-d="2">الثلاثاء</span>
+      <span data-d="3">الأربعاء</span>
+      <span data-d="4">الخميس</span>
+      <span data-d="5">الجمعة</span>
+      <span data-d="6">السبت</span>
+      <span data-d="0">الأحد</span>
     </div>
-    <p class="note rv">من 8:00 حتى 00:00، من الإثنين إلى الأحد. الساعات كما هي منشورة على ملفهم في خرائط جوجل.</p>
+    <p class="note rv">كل أيام الأسبوع. بلا يوم إجازة وبلا استراحة. الساعات كما هي منشورة على ملفهم في خرائط جوجل.</p>
   </div>
 </section>
 <section class="strip" aria-label="الورشة" style="padding:96px 0 0">
@@ -346,59 +373,62 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
 </section>
 <section id="reader" style="background:var(--bg-2)">
   <div class="wrap">
-    <p class="lbl rv">حاسبة مقاس الإطار</p>
-    <h2 class="rv" style="margin-top:20px">اختر مقاسك.<br>ونحن نخبرك بما يعنيه فعلًا.</h2>
-    <p class="prose rv" style="margin-top:24px;color:var(--ink-2)">ثلاث قوائم، مأخوذة مباشرة من جانب إطارك. بعض السيارات تستخدم مقاسًا أماميًا مختلفًا عن الخلفي &mdash; فعّل ذلك بالأسفل. تحسب الصفحة الأبعاد وتكتب لك رسالة الواتساب، فلا يبقى عليك سوى سؤال واحد: هل المقاس متوفر؟</p>
-    <div id="calc" class="rv">
+    <div class="center rv">
+      <p class="lbl">حاسبة مقاس الإطار</p>
+      <h2 style="margin-top:18px">تحقّق من مقاسك.</h2>
+      <p class="prose" style="margin-top:22px;color:var(--ink-2)">اختره من جانب إطارك عبر القوائم الثلاث. بعض السيارات تستخدم مقاسًا أماميًا مختلفًا عن الخلفي &mdash; فعّل ذلك. ثم أرسله كطلب واسأل السؤال الوحيد المهم: هل هو متوفر؟</p>
       <label class="switch">
         <input type="checkbox" id="cStag">
         <span class="track"></span>
         <span>مقاسان مختلفان أمام وخلف</span>
       </label>
-      <div class="calc">
-      <article class="panel" id="pFront">
+    </div>
+    <div id="calc" class="rv">
+      <div class="ccards">
+      <article class="ccard" id="pFront">
         <p class="phead" id="cHeadF">مقاس إطارك</p>
-        <p class="code" id="fCode">205/55 R16 91V</p>
+        <div class="sizerow">
+          <label for="fW"><span>العرض</span><span class="selw"><select id="fW"></select></span></label>
+          <i class="sep">/</i>
+          <label for="fA"><span>النسبة</span><span class="selw"><select id="fA"></select></span></label>
+          <i class="sep">R</i>
+          <label for="fR"><span>الجنط</span><span class="selw"><select id="fR"></select></span></label>
+        </div>
+        <div class="sizerow row2">
+          <label for="fL"><span>مؤشر الحمولة</span><span class="selw"><select id="fL"></select></span></label>
+          <label for="fS"><span>السرعة</span><span class="selw"><select id="fS"></select></span></label>
+        </div>
+        <p class="code" id="fCode">205/55 R16</p>
         <div class="prop" aria-hidden="true"><i class="sw" id="fSide"></i><i class="rm" id="fRim"></i><i class="sw" id="fSide2"></i></div>
-        <div class="prop-l"><span id="fPropL">&mdash;</span><span id="fPropR">&mdash;</span></div>
-        <div class="sel">
-          <div class="fld"><label for="fW">العرض</label><span class="sw-wrap"><select id="fW"></select></span></div>
-          <div class="fld"><label for="fA">النسبة</label><span class="sw-wrap"><select id="fA"></select></span></div>
-          <div class="fld"><label for="fR">الجنط</label><span class="sw-wrap"><select id="fR"></select></span></div>
-        </div>
-        <div class="sel sel2">
-          <div class="fld"><label for="fL">مؤشر الحمولة</label><span class="sw-wrap"><select id="fL"></select></span></div>
-          <div class="fld"><label for="fS">السرعة</label><span class="sw-wrap"><select id="fS"></select></span></div>
-        </div>
+        <ul class="specs" id="fSpec"></ul>
       </article>
-      <article class="panel" id="pRear" hidden>
+      <article class="ccard" hidden id="pRear">
         <p class="phead">الإطارات الخلفية</p>
-        <p class="code" id="rCode">205/55 R16 91V</p>
+        <div class="sizerow">
+          <label for="rW"><span>العرض</span><span class="selw"><select id="rW"></select></span></label>
+          <i class="sep">/</i>
+          <label for="rA"><span>النسبة</span><span class="selw"><select id="rA"></select></span></label>
+          <i class="sep">R</i>
+          <label for="rR"><span>الجنط</span><span class="selw"><select id="rR"></select></span></label>
+        </div>
+        <div class="sizerow row2">
+          <label for="rL"><span>مؤشر الحمولة</span><span class="selw"><select id="rL"></select></span></label>
+          <label for="rS"><span>السرعة</span><span class="selw"><select id="rS"></select></span></label>
+        </div>
+        <p class="code" id="rCode">205/55 R16</p>
         <div class="prop" aria-hidden="true"><i class="sw" id="rSide"></i><i class="rm" id="rRim"></i><i class="sw" id="rSide2"></i></div>
-        <div class="prop-l"><span id="rPropL">&mdash;</span><span id="rPropR">&mdash;</span></div>
-        <div class="sel">
-          <div class="fld"><label for="rW">العرض</label><span class="sw-wrap"><select id="rW"></select></span></div>
-          <div class="fld"><label for="rA">النسبة</label><span class="sw-wrap"><select id="rA"></select></span></div>
-          <div class="fld"><label for="rR">الجنط</label><span class="sw-wrap"><select id="rR"></select></span></div>
-        </div>
-        <div class="sel sel2">
-          <div class="fld"><label for="rL">مؤشر الحمولة</label><span class="sw-wrap"><select id="rL"></select></span></div>
-          <div class="fld"><label for="rS">السرعة</label><span class="sw-wrap"><select id="rS"></select></span></div>
-        </div>
+        <ul class="specs" id="rSpec"></ul>
       </article>
-        <div class="cmp" id="pCmp" hidden><div id="cCmp" style="display:contents"></div></div>
-        <p class="verdict rv" id="cNote" hidden></p>
-        <aside class="panel" id="cOut">
-          <dl class="spec" id="cSpec"></dl>
-          <div class="sel sel2" style="margin-top:24px">
-            <div class="fld"><label for="cDot">رمز DOT</label><input id="cDot" type="text" value="3223" inputmode="numeric" maxlength="4" autocomplete="off" aria-describedby="cAge"></div>
-          </div>
-          <p class="age" id="cAge"></p>
-          <div class="calc-cta">
-            <a class="btn btn-1" id="cWa" href="https://wa.me/971558720712" rel="noopener">اسأل إن كان متوفرًا</a>
-          </div>
-          <p class="src">محسوب من أرقامك ومن جداول ISO&nbsp;4000-1 / ETRTO المنشورة لمؤشر الحمولة ورمز السرعة. لا أسعار هنا &mdash; لم تزوّدنا 4&nbsp;Stroke بقائمة أسعار، ولن نختلق واحدة.</p>
-        </aside>
+      </div>
+      <div class="cmp" id="pCmp" hidden><div id="cCmp" style="display:contents"></div></div>
+      <p class="verdict" id="cNote" hidden></p>
+      <div class="dotbar">
+        <div class="fld"><label for="cDot">رمز DOT</label><input id="cDot" type="text" value="3223" inputmode="numeric" maxlength="4" autocomplete="off" aria-describedby="cAge"></div>
+        <p class="age" id="cAge"></p>
+      </div>
+      <div class="ccta">
+        <a class="btn btn-1" id="cWa" href="#book">استخدم هذا المقاس في الطلب</a>
+        <p class="src" style="max-width:66ch;margin-inline:auto">محسوب من أرقامك ومن جداول ISO&nbsp;4000-1 / ETRTO المنشورة لمؤشر الحمولة ورمز السرعة. لا أسعار هنا &mdash; لم تزوّدنا 4&nbsp;Stroke بقائمة أسعار، ولن نختلق واحدة.</p>
       </div>
     </div>
   </div>
@@ -419,29 +449,44 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
   </div>
 </section>
 <section id="find">
-  <div class="wrap find">
-    <div>
-      <h2 class="rv">رأس الخور<br>الصناعية 2</h2>
-      <dl class="dl rv" style="margin-top:36px">
-        <dt>العنوان</dt><dd><span class="ltr">Ras Al Khor Ind. Second - Ras Al Khor Industrial Area 2 - Dubai</span></dd>
-        <dt>رمز بلس</dt><dd><span class="ltr">59H9+R5 Dubai</span></dd>
-        <dt>واتساب</dt><dd><a class="tlink ltr" href="https://wa.me/971558720712" rel="noopener">+971 55 872 0712</a></dd>
-        <dt>الهاتف</dt><dd><a class="tlink ltr" href="tel:+971558720712">055 872 0712</a></dd>
-      </dl>
-      <div class="rv" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:32px">
-        <a class="btn btn-1" href="https://wa.me/971558720712" rel="noopener">واتساب <span class="ltr">+971 55 872 0712</span></a>
-        <a class="btn btn-2" href="https://maps.google.com/?cid=5419833015983326062" rel="noopener">افتح في خرائط جوجل</a>
-      </div>
-      <div class="gal rv">
-        <img src="../img/sign-night.webp" width="1280" height="960" loading="lazy" decoding="async" alt="لوحة ستروك4 المضاءة ليلًا، وسيارات وشاحمة سحب في الساحة.">
-        <img src="../img/car-lexus.webp" width="900" height="1200" loading="lazy" decoding="async" alt="سيارة لكزس زرقاء داكنة في الخانة بجوار الرافعة وجدار العدة.">
-        <img src="../img/car-suv.webp" width="900" height="1200" loading="lazy" decoding="async" alt="سيارة دفع رباعي بيضاء على منصة ضبط زوايا العجلات.">
-      </div>
+  <div class="wrap">
+    <div class="center rv">
+      <p class="lbl">أرسل طلبًا</p>
+      <h2 style="margin-top:18px">أخبرهم بما تحتاجه.</h2>
+      <p class="prose" style="margin-top:22px;color:var(--ink-2)">املأ هذا وسيفتح الواتساب وكل التفاصيل مكتوبة مسبقًا. أو تعال مباشرة &mdash; هناك من يستقبلك حتى منتصف الليل.</p>
     </div>
-    <div>
-      <p class="lbl rv">ساعات العمل</p>
-      <table class="hours rv" id="hoursTable">
-        <tbody>
+    <div class="book" id="book">
+      <form class="panel rv" id="bookForm" novalidate>
+        <div class="frow">
+          <div class="fld"><label for="bSvc">الخدمة</label><span class="selw"><select id="bSvc">
+              <option>لست متأكدًا بعد</option>
+              <option>خدمات الإطارات</option>
+              <option>ترصيص العجلات</option>
+              <option>إصلاح الجنوط</option>
+              <option>الخدمات الميكانيكية</option>
+              <option>الخدمات الكهربائية</option>
+              <option>البطاريات</option>
+              <option>أعمال التعليق</option>
+              <option>أعمال التكييف</option>
+              <option>تغيير الزيت</option>
+            </select></span></div>
+          <div class="fld"><label for="bCar">السيارة (اختياري)</label><input id="bCar" type="text" placeholder="تويوتا لاند كروزر 2019" autocomplete="off"></div>
+        </div>
+        <div class="fld"><label for="bSize">مقاس الإطار (إن عُرف)</label><input id="bSize" type="text" placeholder="205/55 R16" autocomplete="off"></div>
+        <div class="fld"><label for="bNote">أي ملاحظة أخرى</label><textarea id="bNote" rows="3" placeholder="الإطار الأمامي الأيسر يفقد الهواء ليلًا."></textarea></div>
+        <button class="btn btn-1" type="submit" style="width:100%;justify-content:center;margin-top:22px">أرسل الطلب عبر واتساب</button>
+        <p class="src">يفتح الواتساب وتفاصيلك مكتوبة مسبقًا. لا يُحفظ أي شيء تكتبه هنا على هذا الموقع.</p>
+      </form>
+      <aside>
+        <dl class="dl rv">
+          <dt>العنوان</dt><dd><span class="ltr">Ras Al Khor Ind. Second - Ras Al Khor Industrial Area 2 - Dubai</span></dd>
+          <dt>رمز بلس</dt><dd><span class="ltr">59H9+R5 Dubai</span></dd>
+          <dt>واتساب</dt><dd><a class="tlink ltr" href="https://wa.me/971558720712" rel="noopener">+971 55 872 0712</a></dd>
+          <dt>الهاتف</dt><dd><a class="tlink ltr" href="tel:+971558720712">055 872 0712</a></dd>
+        </dl>
+        <p class="lbl rv" style="margin-top:36px">ساعات العمل</p>
+        <table class="hours rv" id="hoursTable">
+          <tbody>
           <tr data-d="1"><td>الإثنين</td><td>8:00 – 00:00</td></tr>
           <tr data-d="2"><td>الثلاثاء</td><td>8:00 – 00:00</td></tr>
           <tr data-d="3"><td>الأربعاء</td><td>8:00 – 00:00</td></tr>
@@ -449,11 +494,21 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
           <tr data-d="5"><td>الجمعة</td><td>8:00 – 00:00</td></tr>
           <tr data-d="6"><td>السبت</td><td>8:00 – 00:00</td></tr>
           <tr data-d="0"><td>الأحد</td><td>8:00 – 00:00</td></tr>
-        </tbody>
-      </table>
-      <p class="rv" style="margin-top:28px;color:var(--ink-2);font-size:15px">التوقيت بتوقيت دبي، كما هو منشور على ملفهم في خرائط جوجل.</p>
-      <img class="rv" src="../img/sign-close.webp" width="1400" height="1050" loading="lazy" decoding="async" style="margin-top:40px;border-radius:2px"
-           alt="لقطة قريبة للوحة المضاءة، وعليها خدمات الإطارات وستروك4 لإصلاح المركبات والخدمات التسع.">
+          </tbody>
+        </table>
+        <p class="rv" style="margin-top:22px;color:var(--ink-2);font-size:14px">التوقيت بتوقيت دبي، كما هو منشور على ملفهم في خرائط جوجل.</p>
+        <div class="mapbox rv">
+          <iframe title="ستروك4 على خرائط جوجل" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=25.1795301,55.3679046&amp;hl=ar&amp;z=17&amp;output=embed"></iframe>
+        </div>
+        <a class="btn btn-2 rv" href="https://maps.google.com/?cid=5419833015983326062" rel="noopener"
+           style="width:100%;justify-content:center;margin-top:16px">افتح في خرائط جوجل</a>
+      </aside>
+    </div>
+    <div class="gal rv">
+      <img src="../img/sign-night.webp" width="1280" height="960" loading="lazy" decoding="async" alt="لوحة ستروك4 المضاءة ليلًا، وسيارات وشاحنة سحب في الساحة.">
+      <img src="../img/car-lexus.webp" width="900" height="1200" loading="lazy" decoding="async" alt="سيارة لكزس زرقاء داكنة في الخانة بجوار الرافعة وجدار العدة.">
+      <img src="../img/car-suv.webp" width="900" height="1200" loading="lazy" decoding="async" alt="سيارة دفع رباعي بيضاء على منصة ضبط زوايا العجلات.">
     </div>
   </div>
 </section>
@@ -528,6 +583,10 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
     }
     var row = document.querySelector('#hoursTable tr[data-d="' + day + '"]');
     if (row) row.classList.add('now');
+    var chips = document.querySelectorAll('#daysRow span');
+    for (var i = 0; i < chips.length; i++) {
+      chips[i].classList.toggle('today', +chips[i].getAttribute('data-d') === day);
+    }
   }
   tickStatus();
   setInterval(tickStatus, 30000);
@@ -539,8 +598,7 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
   var strip = track.parentElement;
   var hdr   = document.getElementById('hdr');
   var rails = [].slice.call(document.querySelectorAll('.rail i'));
-  var big   = document.getElementById('big112');
-  var counted = false, queued = false;
+  var queued = false;
   function frame(){
     queued = false;
     var vh = window.innerHeight;
@@ -562,17 +620,6 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
       var over = Math.max(0, track.scrollWidth - strip.clientWidth);
       track.style.transform = 'translate3d(' + ((RTL ? 1 : -1) * over * p).toFixed(1) + 'px,0,0)';
     }
-    if (!counted){
-      if (big.getBoundingClientRect().top < vh * 0.82){
-        counted = true;
-        var t0 = performance.now();
-        (function run(t){
-          var k = Math.min(1, (t - t0) / 900);
-          big.textContent = Math.round(112 * (1 - Math.pow(1 - k, 3)));
-          if (k < 1) requestAnimationFrame(run);
-        })(performance.now());
-      }
-    }
     var max = document.documentElement.scrollHeight - vh;
     var ph  = max > 0 ? Math.min(3, Math.floor(window.scrollY / max * 4)) : 0;
     for (var j = 0; j < rails.length; j++) rails[j].classList.toggle('on', j === ph);
@@ -585,7 +632,6 @@ footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;co
   if (reduce){
     revs.forEach(function(e){ e.classList.add('in'); });
     cells.forEach(function(e){ e.classList.add('lit'); });
-    big.textContent = '112';
     unlock();
   } else {
     addEventListener('scroll', onScroll, {passive:true});
@@ -601,6 +647,8 @@ window.FOUR_I18N = {
   locale:'ar-AE',
   dotBad:'رمز DOT من أربعة أرقام: الأسبوع ثم السنة. 3223 تعني الأسبوع 32 من 2023.',
   any:'أي',
+  svcTyres:'خدمات الإطارات',
+  bkHi:'مرحبًا 4 Stroke،', bkSvc:'أحتاج: {v}.', bkCar:'السيارة: {v}.', bkSize:'مقاس الإطار: {v}.',
   headYour:'مقاس إطارك', headFront:'الإطارات الأمامية',
   axLabel:function(ax,t){return t+' · '+(ax==='f'?'أمامي':'خلفي')},
   waFront:'الأمامي: {s}', waRear:'الخلفي: {s}',
