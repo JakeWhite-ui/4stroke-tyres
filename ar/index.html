@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ستروك4 — خدمات الإطارات وإصلاح المركبات، رأس الخور دبي · مفتوح 8 صباحًا حتى منتصف الليل</title>
+<meta name="description" content="خدمات الإطارات، ترصيص العجلات، إصلاح الجنوط، الخدمات الميكانيكية والكهربائية. رأس الخور الصناعية 2، دبي. مفتوح من 8:00 حتى 00:00 كل يوم. واتساب ‎+971 55 872 0712‎.">
+<link rel="canonical" href="https://jakewhite-ui.github.io/4stroke-tyres/ar/">
+<link rel="alternate" hreflang="en" href="https://jakewhite-ui.github.io/4stroke-tyres/">
+<link rel="alternate" hreflang="ar" href="https://jakewhite-ui.github.io/4stroke-tyres/ar/">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="ستروك4 — خدمات الإطارات وإصلاح المركبات، رأس الخور دبي">
+<meta property="og:description" content="مفتوح من 8:00 حتى 00:00، سبعة أيام في الأسبوع.">
+<meta property="og:image" content="https://jakewhite-ui.github.io/4stroke-tyres/img/og.webp">
+<meta property="og:locale" content="ar_AE">
+<meta name="theme-color" content="#0A1830">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A1830'/%3E%3Ctext x='16' y='24' font-family='Helvetica,Arial' font-size='24' font-weight='700' fill='%23F2E63D' text-anchor='middle'%3E4%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sign-blue:#0A1830;
+  --bg:#0A1830; --bg-2:#0E2140; --surface:#13294C;
+  --ink:#F4F6FA; --ink-2:#A8B6CE; --hair:#1E3660;
+  --accent:#F2E63D; --accent-ink:#0A1830; --accent-wash:rgba(242,230,61,.12);
+  --focus:#F2E63D;
+  --lift-1:0 1px 2px rgba(0,0,0,.20);
+  --lift-2:0 10px 28px rgba(0,0,0,.28);
+  --lift-3:0 24px 56px rgba(0,0,0,.36);
+  --wrap-1:#D9DC3B; --wrap-2:#E85C9A; --wrap-3:#3FB874; --wrap-4:#35A8D8; --wrap-5:#2E5FBF;
+  --wrap-6:#EF7A54; --wrap-7:#C7D117; --wrap-8:#8E4FC2; --wrap-9:#1E4478;
+  --maxw:1280px; --pad:24px; --nav-h:64px;
+}
+[data-theme="light"]{
+  --bg:#F2F1EC; --bg-2:#E6E4DC; --surface:#FFFFFF;
+  --ink:#0A1830; --ink-2:#45557A; --hair:#CFCBBE;
+  --accent:#F2E63D; --accent-ink:#0A1830; --accent-wash:rgba(242,230,61,.30);
+  --focus:#0A1830;
+  --lift-1:0 1px 2px rgba(17,23,26,.10);
+  --lift-2:0 10px 28px rgba(17,23,26,.14);
+  --lift-3:0 24px 56px rgba(17,23,26,.18);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font:400 17px/1.75 'Cairo',sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  transition:background .25s ease,color .25s ease;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.prose{max-width:62ch}
+h1,h2,h3{margin:0;line-height:1.3;font-weight:700}
+h2{font-size:clamp(28px,3.8vw,50px);line-height:1.25}
+h3{font-size:20px;font-weight:600}
+p{margin:0}
+.ltr{direction:ltr;unicode-bidi:isolate;font-family:'Space Grotesk',sans-serif}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--ink-2)}
+.num{font-family:'Space Grotesk',sans-serif;font-variant-numeric:tabular-nums;font-weight:700;direction:ltr;unicode-bidi:isolate}
+section{padding:144px 0}
+header{position:sticky;top:0;z-index:10;height:var(--nav-h);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s,background .2s}
+header.stuck{background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom-color:var(--hair);box-shadow:var(--lift-3)}
+.nav{display:flex;align-items:center;gap:20px;height:var(--nav-h)}
+.logo{display:flex;flex-direction:row-reverse;align-items:center;gap:9px;flex-shrink:0;text-decoration:none;font-weight:700;font-size:19px}
+.logo .four{display:grid;place-items:center;width:30px;height:30px;flex-shrink:0;background:var(--sign-blue);color:var(--accent);font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;line-height:1}
+.nav-links{display:flex;gap:4px;margin-inline-start:auto}
+.nav-links a{padding:10px 12px;font-size:15px;font-weight:500;text-decoration:none;color:var(--ink-2);border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.nav-links a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.icon-btn{width:44px;height:44px;display:grid;place-items:center;flex-shrink:0;background:none;border:0;color:var(--ink-2);cursor:pointer;font:inherit;font-size:15px;font-weight:600;transition:color .15s}
+.icon-btn:hover{color:var(--ink)}
+.icon-btn svg{width:20px;height:20px;stroke:currentColor;stroke-width:1.5;fill:none}
+[data-theme="dark"] .i-sun{display:block}[data-theme="dark"] .i-moon{display:none}
+[data-theme="light"] .i-sun{display:none}[data-theme="light"] .i-moon{display:block}
+.btn{display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:14px 26px;font:600 15px/1 'Cairo',sans-serif;text-decoration:none;border-radius:2px;border:1px solid transparent;cursor:pointer;white-space:nowrap;transition:transform .15s,background .15s,color .15s,border-color .15s,box-shadow .15s}
+.btn svg{width:18px;height:18px;flex-shrink:0}
+.btn-1{background:var(--accent);color:var(--accent-ink)}
+.btn-1:hover{background:var(--ink);color:var(--bg);transform:translateY(-2px);box-shadow:var(--lift-2)}
+.btn-1:active{transform:translateY(0);box-shadow:none}
+.btn-2{border-color:var(--hair);color:var(--ink)}
+.btn-2:hover{border-color:var(--accent);background:var(--accent-wash);transform:translateY(-2px)}
+.btn-2:active{transform:translateY(0)}
+.btn-sm{min-height:44px;padding:11px 18px;font-size:14px}
+.tlink{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}
+.tlink:hover{text-decoration-thickness:2px}
+.rail{position:fixed;right:16px;top:50%;transform:translateY(-50%);z-index:5;pointer-events:none;display:flex;flex-direction:column;gap:10px}
+.rail i{display:block;width:2px;height:34px;background:var(--hair);position:relative;transition:background .3s}
+.rail i.on{background:var(--accent)}
+.rail i::after{content:attr(data-p);position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--ink-2);white-space:nowrap;opacity:0;transition:opacity .3s}
+.rail i.on::after{opacity:1}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:none}
+.hero{display:grid;grid-template-columns:1fr 38%;min-height:calc(100svh - var(--nav-h));align-items:stretch}
+.hero-l{display:flex;flex-direction:column;justify-content:center;gap:28px;padding:56px var(--pad);padding-inline-start:max(var(--pad),calc((100vw - var(--maxw))/2 + var(--pad)))}
+.hero h1{font-size:clamp(38px,7vw,104px);line-height:1.22;letter-spacing:0}
+.hero h1 .ln{display:block;overflow:hidden;padding-block:.06em}
+.hero h1 .ln span{display:block;white-space:nowrap;transform:translateY(105%);transition:transform .95s cubic-bezier(.22,1,.36,1)}
+.hero h1 .ln:nth-child(2) span{transition-delay:.09s}
+.loaded .hero h1 .ln span{transform:none}
+.bar{height:10px;background:var(--accent);width:clamp(120px,30%,260px);transform:scaleX(0);transform-origin:right;transition:transform .8s cubic-bezier(.22,1,.36,1) .5s}
+.loaded .bar{transform:scaleX(1)}
+.hero-sub{font-size:clamp(16px,1.5vw,19px);color:var(--ink-2);max-width:42ch}
+.status{display:flex;align-items:center;gap:11px;font-size:16px;font-weight:600}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--ink-2);flex-shrink:0}
+.dot.open{background:var(--accent);box-shadow:0 0 0 4px var(--accent-wash)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-meta{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-top:8px;border-top:1px solid var(--hair);margin-top:4px}
+.hero-meta .num{font-size:clamp(36px,5vw,64px);line-height:1}
+.hero-r{position:relative;overflow:hidden;background:var(--bg-2)}
+.hero-r img{position:absolute;inset:-9% 0;width:100%;height:118%;object-fit:cover;will-change:transform}
+.burst{background:var(--bg-2);text-align:center;overflow:hidden}
+.burst .big{font-size:clamp(110px,26vw,380px);line-height:.8;letter-spacing:-.05em}
+.burst .rows{display:flex;justify-content:center;gap:clamp(18px,4vw,54px);flex-wrap:wrap;margin-top:40px}
+.burst .rows div{text-align:start}
+.burst .rows b{display:block;font-size:clamp(22px,3vw,38px);line-height:1.2;font-family:'Space Grotesk',sans-serif}
+.burst .note{margin-top:40px;color:var(--ink-2);font-size:15px}
+.strip{padding:0;overflow:clip}
+.strip-track{display:flex;gap:16px;width:max-content;will-change:transform}
+.strip-track img{height:clamp(260px,42vw,520px);width:auto;object-fit:cover;border-radius:2px}
+.strip-cap{padding:24px var(--pad) 0;color:var(--ink-2);font-size:14px}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.cell{position:relative;background:var(--surface);border:1px solid var(--hair);border-radius:2px;padding:26px 27px 24px 24px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;transition:border-color .2s,background .2s;overflow:hidden}
+.cell::before{content:"";position:absolute;inset-inline-start:0;inset-block:0;width:3px;background:var(--w);transform:scaleY(0);transform-origin:bottom;transition:transform .45s cubic-bezier(.22,1,.36,1)}
+.cell.lit::before{transform:scaleY(1)}
+.cell h3{transition:transform .2s}
+.cell .n{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--ink-2);direction:ltr;unicode-bidi:isolate;align-self:flex-start}
+.cell.w2{grid-column:span 2}
+@media (hover:hover) and (pointer:fine){
+  .cell:hover{border-color:var(--accent);background:var(--accent-wash)}
+  .cell:hover::before{transform:scaleY(1)}
+  .cell:hover h3{transform:translateX(-4px)}
+}
+.cell:focus-within{border-color:var(--accent);background:var(--accent-wash)}
+.cell:focus-within::before{transform:scaleY(1)}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:16px;margin-top:56px}
+.rev{background:var(--surface);border:1px solid var(--hair);border-radius:2px;padding:28px 26px;display:flex;flex-direction:column;gap:18px}
+.rev q{font-family:'Space Grotesk',sans-serif;font-size:18px;line-height:1.5;quotes:none;direction:ltr;unicode-bidi:isolate;text-align:left}
+.rev q::before,.rev q::after{content:none}
+.rev footer{font-size:13px;color:var(--ink-2);margin-top:auto}
+.rev footer b{display:block;color:var(--ink);font-size:14px;font-weight:600;direction:ltr;unicode-bidi:isolate;text-align:right}
+.badge{display:inline-block;margin-top:6px;font-size:11px;border:1px solid var(--hair);border-radius:2px;padding:3px 7px}
+.find{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start}
+.hours{width:100%;border-collapse:collapse;margin-top:24px}
+.hours td{padding:11px 0;border-bottom:1px solid var(--hair);font-size:16px}
+.hours td:last-child{text-align:end;font-weight:600;font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate}
+.hours tr.now td{color:var(--ink)}
+.hours tr.now td:first-child::after{content:"·  اليوم";color:var(--ink-2);font-weight:400;font-size:13px;margin-inline-start:10px}
+.dl{display:grid;grid-template-columns:auto 1fr;gap:14px 24px;margin:0;font-size:16px}
+.dl dt{color:var(--ink-2);font-size:13px;padding-top:4px}
+.dl dd{margin:0}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:2px;aspect-ratio:3/4}
+.gal img:first-child{grid-column:span 2;aspect-ratio:16/10}
+footer.ft{border-top:1px solid var(--hair);padding:56px 0 40px;font-size:14px;color:var(--ink-2)}
+.ft-grid{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start}
+.ft-nav{display:flex;flex-wrap:wrap;gap:18px}
+.ft-nav a{text-decoration:none}
+.ft-nav a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
+.ft-note{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);font-size:12.5px;line-height:1.9}
+.switch{display:inline-flex;align-items:center;gap:12px;min-height:44px;margin-top:40px;cursor:pointer;font-size:15px;font-weight:600;user-select:none}
+.switch input{position:absolute;opacity:0;width:0;height:0}
+.switch .track{position:relative;width:48px;height:28px;flex-shrink:0;border:1px solid var(--hair);border-radius:999px;background:var(--bg-2);transition:background .2s,border-color .2s}
+.switch .track::after{content:"";position:absolute;top:3px;inset-inline-start:3px;width:20px;height:20px;border-radius:50%;background:var(--ink-2);transition:transform .22s cubic-bezier(.22,1,.36,1),background .2s}
+.switch input:checked + .track{background:var(--accent);border-color:var(--accent)}
+.switch input:checked + .track::after{background:var(--accent-ink);transform:translateX(20px)}
+[dir="rtl"] .switch input:checked + .track::after{transform:translateX(-20px)}
+.switch input:focus-visible + .track{outline:2px solid var(--focus);outline-offset:3px}
+.calc{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:24px;align-items:stretch}
+#calc.stag .calc{grid-template-columns:1fr 1fr}
+#calc.stag #cOut{grid-column:1/-1}
+#pCmp,#cNote{grid-column:1/-1}
+.panel{background:var(--surface);border:1px solid var(--hair);border-radius:2px;padding:32px;display:flex;flex-direction:column}
+.phead{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-bottom:18px}
+.code{font-size:clamp(28px,4.1vw,58px);line-height:1;letter-spacing:-.03em;font-weight:700;
+  font-variant-numeric:tabular-nums;word-break:break-word;min-height:1em;
+  font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate}
+.prop{display:flex;height:12px;margin-top:24px;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+.prop i{display:block;height:100%;transition:flex-grow .3s cubic-bezier(.22,1,.36,1)}
+.prop .sw{background:var(--accent)}
+.prop .rm{background:var(--ink-2)}
+.prop-l{display:flex;justify-content:space-between;gap:16px;margin-top:10px;
+  font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.sel{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.sel.sel2{grid-template-columns:1fr 1fr;margin-top:12px}
+.fld{display:flex;flex-direction:column;gap:8px;min-width:0}
+.fld label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.fld select,.fld input{width:100%;min-height:52px;padding:12px 34px 12px 14px;border:1px solid var(--hair);border-radius:2px;
+  background:var(--bg-2);color:var(--ink);font:600 18px/1.2 'Space Grotesk',sans-serif;
+  font-variant-numeric:tabular-nums;direction:ltr;text-align:start;appearance:none;-webkit-appearance:none;cursor:pointer}
+.fld input{cursor:text}
+.fld select:focus-visible,.fld input:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-color:var(--accent)}
+[dir="rtl"] .fld select{text-align:right;padding:12px 14px 12px 34px}
+[dir="rtl"] .fld input{text-align:right;padding:12px 14px}
+.fld .sw-wrap{position:relative}
+.fld .sw-wrap::after{content:"";position:absolute;inset-inline-end:14px;top:50%;width:8px;height:8px;
+  border-right:1.5px solid var(--ink-2);border-bottom:1.5px solid var(--ink-2);
+  transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.cmp{margin-top:16px;background:var(--ink);color:var(--bg);border-radius:2px;padding:28px 32px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.cmp .cc{display:flex;flex-direction:column;gap:6px}
+.cmp .cc b{font-size:clamp(22px,2.6vw,34px);line-height:1;font-weight:700;
+  font-family:'Space Grotesk',sans-serif;font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate}
+.cmp .cc span{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;opacity:.72}
+.verdict{margin-top:16px;padding:16px 20px;border:1px solid var(--hair);border-radius:2px;font-size:15px;line-height:1.5}
+.verdict.ok{border-inline-start:3px solid var(--accent)}
+.verdict.warn{background:var(--accent-wash);border-inline-start:3px solid var(--accent)}
+.spec{display:grid;grid-template-columns:1fr auto;margin:0;column-gap:24px}
+.spec dt,.spec dd{padding:11px 0;border-bottom:1px solid var(--hair);margin:0;font-size:15px}
+.spec dt{color:var(--ink-2)}
+.spec dd{text-align:end;font-weight:600;font-variant-numeric:tabular-nums;
+  font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate}
+.age{margin-top:20px;font-size:15px;color:var(--ink-2);min-height:1.5em}
+.age b{color:var(--ink);font-weight:600}
+.calc-cta{margin-top:28px}
+.calc-cta .btn{width:100%;justify-content:center}
+.src{margin-top:auto;padding-top:20px;font-size:12.5px;line-height:1.7;color:var(--ink-2)}
+@media (max-width:899px){.calc,#calc.stag .calc{grid-template-columns:1fr}.cmp{padding:22px 20px;gap:12px}}
+@media (max-width:479px){.panel{padding:24px 20px}.sel{grid-template-columns:1fr 1fr}.cmp{grid-template-columns:1fr;text-align:start}}
+.logo{padding-block:7px}
+.hero-meta .tlink{display:inline-block;padding-block:8px}
+.ft-nav a{display:inline-block;padding:11px 2px}
+.ft-contacts p{margin:0}
+.ft-contacts .tlink{display:inline-block;padding-block:11px}
+.dl dd .tlink{display:inline-block;padding-block:12px;margin-block:-10px}
+@media (max-width:1199px){.bento{grid-template-columns:repeat(3,1fr)}.rail{display:none}}
+@media (max-width:999px){.hero{grid-template-columns:1fr 34%}.find{grid-template-columns:1fr;gap:56px}.nav-links{display:none}}
+@media (max-width:899px){.bento{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:639px){
+  .nav{gap:10px}
+  header .btn-sm{padding:11px 0;width:44px;justify-content:center}
+  .wa-t{display:none}
+}
+@media (max-width:767px){
+  :root{--pad:16px}
+  section{padding:72px 0}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-l{padding:48px var(--pad) 40px;padding-inline-start:var(--pad);gap:24px}
+  .hero h1{font-size:clamp(34px,8.6vw,72px)}
+  .hero-r{height:58vw;min-height:280px}
+  .hero-r img{inset:-5% 0;height:110%}
+  .cell.w2{grid-column:span 1}
+  .burst .rows{gap:18px}
+  .gal img:first-child{grid-column:span 2}
+}
+@media (max-width:479px){.bento{grid-template-columns:1fr}.hero-cta .btn{flex:1 1 100%;justify-content:center}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+  .hero h1 .ln span{transform:none}
+  .bar{transform:scaleX(1)}
+  .cell::before{transform:scaleY(1)}
+}
+</style>
+</head>
+<body>
+<div class="rail" aria-hidden="true">
+  <i data-p="سحب"></i><i data-p="ضغط"></i><i data-p="قدرة"></i><i data-p="عادم"></i>
+</div>
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="four">4</span>ستروك</a>
+    <nav class="nav-links">
+      <a href="#reader">قارئ الإطار</a>
+      <a href="#services">الخدمات</a>
+      <a href="#hours">ساعات العمل</a>
+      <a href="#reviews">التقييمات</a>
+      <a href="#find">الموقع</a>
+    </nav>
+    <button class="icon-btn" id="theme" type="button" aria-label="التبديل إلى الوضع الفاتح">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 1 1 9.4 3.5a7 7 0 0 0 11.1 11.1Z"/></svg>
+    </button>
+    <a class="icon-btn" href="../" lang="en" hreflang="en" aria-label="English version">EN</a>
+    <a class="btn btn-1 btn-sm" href="https://wa.me/971558720712" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a12.6 12.6 0 0 1-5.6-4.9c-.4-.6-1-1.5-1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.2-.2.3 0 .6a9 9 0 0 0 4 3.4c.3.1.5.1.6-.1l.8-1c.2-.2.3-.2.6-.1l2 1c.3.1.4.2.5.3 0 .1 0 .6-.2 1.1Z"/></svg>
+      <span class="wa-t">واتساب</span>
+    </a>
+  </div>
+</header>
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="hero-l">
+    <div>
+      <h1><span class="ln"><span>ستروك4</span></span><span class="ln"><span>خدمات الإطارات</span></span></h1>
+      <div class="bar" style="margin-top:22px"></div>
+    </div>
+    <p class="hero-sub">إطارات، ترصيص عجلات، إصلاح جنوط، خدمات ميكانيكية وكهربائية — رأس الخور الصناعية&nbsp;2، دبي.</p>
+    <p class="status"><span class="dot" id="dot"></span><span id="statusText">من 8:00 حتى 00:00، كل يوم</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-1" href="https://wa.me/971558720712" rel="noopener">واتساب <span class="ltr">+971 55 872 0712</span></a>
+      <a class="btn btn-2" href="tel:+971558720712">اتصل <span class="ltr">055 872 0712</span></a>
+    </div>
+    <div class="hero-meta">
+      <span class="num">4,3</span>
+      <a class="tlink" href="https://maps.google.com/?cid=5419833015983326062" rel="noopener">12 تقييمًا على خرائط جوجل</a>
+    </div>
+  </div>
+  <div class="hero-r">
+    <img id="heroImg" src="../img/hero-rack.webp" width="900" height="1600" fetchpriority="high" decoding="async"
+         alt="رفوف تمتد من الأرض إلى السقف في ستروك4، مليئة بإطارات جديدة ما زالت بأغلفة المصنع الصفراء والوردية والخضراء والزرقاء.">
+  </div>
+</section>
+<section class="burst" id="hours">
+  <div class="wrap">
+    <p class="lbl rv">ساعات العمل</p>
+    <p class="big num rv" id="big112" style="margin-top:24px">0</p>
+    <div class="rows rv">
+      <div><b class="num">16</b><span class="lbl">ساعة يوميًا</span></div>
+      <div><b class="num">7</b><span class="lbl">أيام في الأسبوع</span></div>
+      <div><b class="num">0</b><span class="lbl">أيام إجازة</span></div>
+    </div>
+    <p class="note rv">من 8:00 حتى 00:00، من الإثنين إلى الأحد. الساعات كما هي منشورة على ملفهم في خرائط جوجل.</p>
+  </div>
+</section>
+<section class="strip" aria-label="الورشة" style="padding:96px 0 0">
+  <div class="strip-track" id="track">
+    <img src="../img/rack-a.webp" width="1600" height="739" loading="lazy" decoding="async" alt="رفوف برتقالية مليئة بالإطارات المغلفة، وكرفان متوقف في الخانة المجاورة.">
+    <img src="../img/rack-b.webp" width="1400" height="973" loading="lazy" decoding="async" alt="رفوف زرقاء من الإطارات الملونة بجانب جهاز ضبط زوايا العجلات.">
+    <img src="../img/rack-d.webp" width="1600" height="739" loading="lazy" decoding="async" alt="سيارة لكزس مرفوعة على الرافعة المقصية بجوار رفوف الإطارات.">
+    <img src="../img/rack-c.webp" width="1600" height="740" loading="lazy" decoding="async" alt="الورشة من المدخل في وضح النهار، الرفوف على اليسار والرافعة في الوسط.">
+  </div>
+  <div class="wrap"><p class="strip-cap">رفوفهم، مصوَّرة على ملفهم في خرائط جوجل. مرِّر الصفحة لتسير بمحاذاتها.</p></div>
+</section>
+<section id="services">
+  <div class="wrap">
+    <h2 class="rv">تسع خدمات.<br>وكلها مكتوبة على لوحتهم.</h2>
+    <p class="prose rv" style="margin-top:24px;color:var(--ink-2)">لا شيء هنا مُختلَق من أجل الموقع — هذه هي القائمة المعلَّقة فوق البوابة.</p>
+    <div class="bento">
+      <article class="cell w2 rv" style="--w:var(--wrap-1)" tabindex="0"><span class="n">01</span><h3>خدمات الإطارات</h3></article>
+      <article class="cell rv" style="--w:var(--wrap-2)" tabindex="0"><span class="n">02</span><h3>الخدمات الميكانيكية</h3></article>
+      <article class="cell rv" style="--w:var(--wrap-3)" tabindex="0"><span class="n">03</span><h3>الخدمات الكهربائية</h3></article>
+      <article class="cell w2 rv" style="--w:var(--wrap-4)" tabindex="0"><span class="n">04</span><h3>ترصيص العجلات</h3></article>
+      <article class="cell rv" style="--w:var(--wrap-5)" tabindex="0"><span class="n">05</span><h3>إصلاح الجنوط</h3></article>
+      <article class="cell rv" style="--w:var(--wrap-6)" tabindex="0"><span class="n">06</span><h3>البطاريات</h3></article>
+      <article class="cell rv" style="--w:var(--wrap-7)" tabindex="0"><span class="n">07</span><h3>أعمال التعليق</h3></article>
+      <article class="cell rv" style="--w:var(--wrap-8)" tabindex="0"><span class="n">08</span><h3>أعمال التكييف</h3></article>
+      <article class="cell w2 rv" style="--w:var(--wrap-9)" tabindex="0"><span class="n">09</span><h3>تغيير الزيت</h3></article>
+    </div>
+  </div>
+</section>
+<section id="reader" style="background:var(--bg-2)">
+  <div class="wrap">
+    <p class="lbl rv">حاسبة مقاس الإطار</p>
+    <h2 class="rv" style="margin-top:20px">اختر مقاسك.<br>ونحن نخبرك بما يعنيه فعلًا.</h2>
+    <p class="prose rv" style="margin-top:24px;color:var(--ink-2)">ثلاث قوائم، مأخوذة مباشرة من جانب إطارك. بعض السيارات تستخدم مقاسًا أماميًا مختلفًا عن الخلفي &mdash; فعّل ذلك بالأسفل. تحسب الصفحة الأبعاد وتكتب لك رسالة الواتساب، فلا يبقى عليك سوى سؤال واحد: هل المقاس متوفر؟</p>
+    <div id="calc" class="rv">
+      <label class="switch">
+        <input type="checkbox" id="cStag">
+        <span class="track"></span>
+        <span>مقاسان مختلفان أمام وخلف</span>
+      </label>
+      <div class="calc">
+      <article class="panel" id="pFront">
+        <p class="phead" id="cHeadF">مقاس إطارك</p>
+        <p class="code" id="fCode">205/55 R16 91V</p>
+        <div class="prop" aria-hidden="true"><i class="sw" id="fSide"></i><i class="rm" id="fRim"></i><i class="sw" id="fSide2"></i></div>
+        <div class="prop-l"><span id="fPropL">&mdash;</span><span id="fPropR">&mdash;</span></div>
+        <div class="sel">
+          <div class="fld"><label for="fW">العرض</label><span class="sw-wrap"><select id="fW"></select></span></div>
+          <div class="fld"><label for="fA">النسبة</label><span class="sw-wrap"><select id="fA"></select></span></div>
+          <div class="fld"><label for="fR">الجنط</label><span class="sw-wrap"><select id="fR"></select></span></div>
+        </div>
+        <div class="sel sel2">
+          <div class="fld"><label for="fL">مؤشر الحمولة</label><span class="sw-wrap"><select id="fL"></select></span></div>
+          <div class="fld"><label for="fS">السرعة</label><span class="sw-wrap"><select id="fS"></select></span></div>
+        </div>
+      </article>
+      <article class="panel" id="pRear" hidden>
+        <p class="phead">الإطارات الخلفية</p>
+        <p class="code" id="rCode">205/55 R16 91V</p>
+        <div class="prop" aria-hidden="true"><i class="sw" id="rSide"></i><i class="rm" id="rRim"></i><i class="sw" id="rSide2"></i></div>
+        <div class="prop-l"><span id="rPropL">&mdash;</span><span id="rPropR">&mdash;</span></div>
+        <div class="sel">
+          <div class="fld"><label for="rW">العرض</label><span class="sw-wrap"><select id="rW"></select></span></div>
+          <div class="fld"><label for="rA">النسبة</label><span class="sw-wrap"><select id="rA"></select></span></div>
+          <div class="fld"><label for="rR">الجنط</label><span class="sw-wrap"><select id="rR"></select></span></div>
+        </div>
+        <div class="sel sel2">
+          <div class="fld"><label for="rL">مؤشر الحمولة</label><span class="sw-wrap"><select id="rL"></select></span></div>
+          <div class="fld"><label for="rS">السرعة</label><span class="sw-wrap"><select id="rS"></select></span></div>
+        </div>
+      </article>
+        <div class="cmp" id="pCmp" hidden><div id="cCmp" style="display:contents"></div></div>
+        <p class="verdict rv" id="cNote" hidden></p>
+        <aside class="panel" id="cOut">
+          <dl class="spec" id="cSpec"></dl>
+          <div class="sel sel2" style="margin-top:24px">
+            <div class="fld"><label for="cDot">رمز DOT</label><input id="cDot" type="text" value="3223" inputmode="numeric" maxlength="4" autocomplete="off" aria-describedby="cAge"></div>
+          </div>
+          <p class="age" id="cAge"></p>
+          <div class="calc-cta">
+            <a class="btn btn-1" id="cWa" href="https://wa.me/971558720712" rel="noopener">اسأل إن كان متوفرًا</a>
+          </div>
+          <p class="src">محسوب من أرقامك ومن جداول ISO&nbsp;4000-1 / ETRTO المنشورة لمؤشر الحمولة ورمز السرعة. لا أسعار هنا &mdash; لم تزوّدنا 4&nbsp;Stroke بقائمة أسعار، ولن نختلق واحدة.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="reviews" style="background:var(--bg-2)">
+  <div class="wrap">
+    <p class="lbl rv">4,3 على جوجل · 12 تقييمًا · خمسة منها مكتوبة</p>
+    <h2 class="rv" style="margin-top:20px">اثنان من الخمسة ينصحان غيرهما بالقدوم إلى هنا.</h2>
+    <p class="rv" style="margin-top:16px;color:var(--ink-2);font-size:15px">التقييمات منشورة بالإنجليزية كما كتبها أصحابها. لم نترجمها ولم نغيّرها.</p>
+    <div class="revs">
+      <article class="rev rv"><q lang="en">Very profasional staff, I recommended other to Come here for Repair all vehicles tires.</q><footer><b lang="en">Jamal Almuhairi</b>قبل سنتين</footer></article>
+      <article class="rev rv"><q lang="en">All workers good and honest 👍.I recommend others to come here .</q><footer><b lang="en">Fahad Younas</b>قبل سنتين</footer></article>
+      <article class="rev rv"><q lang="en">Good price</q><footer><b lang="en">Zeeshan Akhtar</b>قبل 10 أشهر<span class="badge">Local Guide · 136 reviews</span></footer></article>
+      <article class="rev rv"><q lang="en">It's provide good service</q><footer><b lang="en">Arshad Muhammad</b>قبل سنة</footer></article>
+      <article class="rev rv"><q lang="en">4 strok tire shop</q><footer><b lang="en">Recovery Service Al dhaid</b>قبل سنتين<span class="badge">Local Guide · 176 reviews</span></footer></article>
+    </div>
+    <p class="rv" style="margin-top:32px;font-size:14px;color:var(--ink-2)"><a class="tlink" href="https://maps.google.com/?cid=5419833015983326062" rel="noopener">اقرأ التقييمات الاثني عشر على جوجل</a></p>
+  </div>
+</section>
+<section id="find">
+  <div class="wrap find">
+    <div>
+      <h2 class="rv">رأس الخور<br>الصناعية 2</h2>
+      <dl class="dl rv" style="margin-top:36px">
+        <dt>العنوان</dt><dd><span class="ltr">Ras Al Khor Ind. Second - Ras Al Khor Industrial Area 2 - Dubai</span></dd>
+        <dt>رمز بلس</dt><dd><span class="ltr">59H9+R5 Dubai</span></dd>
+        <dt>واتساب</dt><dd><a class="tlink ltr" href="https://wa.me/971558720712" rel="noopener">+971 55 872 0712</a></dd>
+        <dt>الهاتف</dt><dd><a class="tlink ltr" href="tel:+971558720712">055 872 0712</a></dd>
+      </dl>
+      <div class="rv" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:32px">
+        <a class="btn btn-1" href="https://wa.me/971558720712" rel="noopener">واتساب <span class="ltr">+971 55 872 0712</span></a>
+        <a class="btn btn-2" href="https://maps.google.com/?cid=5419833015983326062" rel="noopener">افتح في خرائط جوجل</a>
+      </div>
+      <div class="gal rv">
+        <img src="../img/sign-night.webp" width="1280" height="960" loading="lazy" decoding="async" alt="لوحة ستروك4 المضاءة ليلًا، وسيارات وشاحمة سحب في الساحة.">
+        <img src="../img/car-lexus.webp" width="900" height="1200" loading="lazy" decoding="async" alt="سيارة لكزس زرقاء داكنة في الخانة بجوار الرافعة وجدار العدة.">
+        <img src="../img/car-suv.webp" width="900" height="1200" loading="lazy" decoding="async" alt="سيارة دفع رباعي بيضاء على منصة ضبط زوايا العجلات.">
+      </div>
+    </div>
+    <div>
+      <p class="lbl rv">ساعات العمل</p>
+      <table class="hours rv" id="hoursTable">
+        <tbody>
+          <tr data-d="1"><td>الإثنين</td><td>8:00 – 00:00</td></tr>
+          <tr data-d="2"><td>الثلاثاء</td><td>8:00 – 00:00</td></tr>
+          <tr data-d="3"><td>الأربعاء</td><td>8:00 – 00:00</td></tr>
+          <tr data-d="4"><td>الخميس</td><td>8:00 – 00:00</td></tr>
+          <tr data-d="5"><td>الجمعة</td><td>8:00 – 00:00</td></tr>
+          <tr data-d="6"><td>السبت</td><td>8:00 – 00:00</td></tr>
+          <tr data-d="0"><td>الأحد</td><td>8:00 – 00:00</td></tr>
+        </tbody>
+      </table>
+      <p class="rv" style="margin-top:28px;color:var(--ink-2);font-size:15px">التوقيت بتوقيت دبي، كما هو منشور على ملفهم في خرائط جوجل.</p>
+      <img class="rv" src="../img/sign-close.webp" width="1400" height="1050" loading="lazy" decoding="async" style="margin-top:40px;border-radius:2px"
+           alt="لقطة قريبة للوحة المضاءة، وعليها خدمات الإطارات وستروك4 لإصلاح المركبات والخدمات التسع.">
+    </div>
+  </div>
+</section>
+</main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="logo" href="#top" style="text-decoration:none"><span class="four">4</span>ستروك</a>
+        <p style="margin-top:16px;max-width:36ch"><span class="ltr">Ras Al Khor Ind. Second - Ras Al Khor Industrial Area 2 - Dubai</span><br><span class="ltr">59H9+R5 Dubai</span></p>
+      </div>
+      <nav class="ft-nav">
+        <a href="#reader">قارئ الإطار</a><a href="#services">الخدمات</a><a href="#hours">ساعات العمل</a><a href="#reviews">التقييمات</a><a href="#find">الموقع</a><a href="../" lang="en">English</a>
+      </nav>
+      <div class="ft-contacts">
+        <p><a class="tlink ltr" href="https://wa.me/971558720712" rel="noopener">+971 55 872 0712</a></p>
+        <p style="margin-top:8px"><a class="tlink ltr" href="tel:+971558720712">055 872 0712</a></p>
+        <p style="margin-top:8px"><a class="tlink" href="https://maps.google.com/?cid=5419833015983326062" rel="noopener">الملف على خرائط جوجل</a></p>
+      </div>
+    </div>
+    <p class="ft-note">الاسم على خرائط جوجل: <span class="ltr">4 stroke Tyres shope</span> · ستروك4 الاطارت. التقييم 4,3 من 12 تقييمًا، جمعتها ونشرتها جوجل. الصور من الملف العام للمنشأة على خرائط جوجل، وقد تم طمس أرقام لوحات سيارات العملاء.</p>
+  </div>
+</footer>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AutoRepair",
+  "name":"4 stroke Tyres shope",
+  "alternateName":"ستروك4 الاطارت",
+  "address":{"@type":"PostalAddress","streetAddress":"Ras Al Khor Ind. Second - Ras Al Khor Industrial Area 2","addressLocality":"Dubai","addressCountry":"AE"},
+  "geo":{"@type":"GeoCoordinates","latitude":25.1795301,"longitude":55.3679046},
+  "telephone":"+971558720712",
+  "hasMap":"https://maps.google.com/?cid=5419833015983326062",
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"23:59"}],
+  "image":"https://jakewhite-ui.github.io/4stroke-tyres/img/og.webp"
+}
+</script>
+<script>
+(function(){
+  'use strict';
+  var root = document.documentElement;
+  var RTL = true;
+  var KEY = '4s-theme-v1';
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch(e){}
+  var sysLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+  setTheme(saved || (sysLight ? 'light' : 'dark'), false);
+  function setTheme(t, persist){
+    root.setAttribute('data-theme', t);
+    var b = document.getElementById('theme');
+    if (b) b.setAttribute('aria-label', t === 'dark' ? 'التبديل إلى الوضع الفاتح' : 'التبديل إلى الوضع الداكن');
+    var m = document.querySelector('meta[name=theme-color]');
+    if (m) m.setAttribute('content', t === 'dark' ? '#0A1830' : '#F2F1EC');
+    if (persist) { try { localStorage.setItem(KEY, t); } catch(e){} }
+  }
+  document.getElementById('theme').addEventListener('click', function(){
+    setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark', true);
+  });
+  var OPEN = 8, CLOSE = 24;
+  function dubai(){ var n = new Date(); return new Date(n.getTime() + n.getTimezoneOffset()*60000 + 4*3600000); }
+  function tickStatus(){
+    var d = dubai(), h = d.getHours(), m = d.getMinutes(), day = d.getDay();
+    var dot = document.getElementById('dot'), tx = document.getElementById('statusText');
+    if (h >= OPEN){
+      var left = (CLOSE*60) - (h*60 + m);
+      tx.textContent = 'مفتوح الآن · يُغلق بعد ' + Math.floor(left/60) + ' س ' + (left%60) + ' د';
+      dot.classList.add('open');
+    } else {
+      var till = (OPEN*60) - (h*60 + m);
+      tx.textContent = 'يفتح 8:00 · بعد ' + Math.floor(till/60) + ' س ' + (till%60) + ' د';
+      dot.classList.remove('open');
+    }
+    var row = document.querySelector('#hoursTable tr[data-d="' + day + '"]');
+    if (row) row.classList.add('now');
+  }
+  tickStatus();
+  setInterval(tickStatus, 30000);
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revs  = [].slice.call(document.querySelectorAll('.rv'));
+  var cells = [].slice.call(document.querySelectorAll('.cell'));
+  var hero  = document.getElementById('heroImg');
+  var track = document.getElementById('track');
+  var strip = track.parentElement;
+  var hdr   = document.getElementById('hdr');
+  var rails = [].slice.call(document.querySelectorAll('.rail i'));
+  var big   = document.getElementById('big112');
+  var counted = false, queued = false;
+  function frame(){
+    queued = false;
+    var vh = window.innerHeight;
+    for (var i = revs.length - 1; i >= 0; i--){
+      var r = revs[i].getBoundingClientRect();
+      if (r.top < vh * 0.88 && r.bottom > 0){ revs[i].classList.add('in'); revs.splice(i,1); }
+    }
+    for (var c = cells.length - 1; c >= 0; c--){
+      if (cells[c].getBoundingClientRect().top < vh * 0.8){ cells[c].classList.add('lit'); cells.splice(c,1); }
+    }
+    hdr.classList.toggle('stuck', window.scrollY > 40);
+    if (hero){
+      var hr = hero.parentElement.getBoundingClientRect();
+      if (hr.bottom > 0 && hr.top < vh) hero.style.transform = 'translate3d(0,' + (-hr.top * 0.075).toFixed(2) + 'px,0)';
+    }
+    var sr = strip.getBoundingClientRect();
+    if (sr.bottom > 0 && sr.top < vh){
+      var p = Math.min(1, Math.max(0, (vh - sr.top) / (vh + sr.height)));
+      var over = Math.max(0, track.scrollWidth - strip.clientWidth);
+      track.style.transform = 'translate3d(' + ((RTL ? 1 : -1) * over * p).toFixed(1) + 'px,0,0)';
+    }
+    if (!counted){
+      if (big.getBoundingClientRect().top < vh * 0.82){
+        counted = true;
+        var t0 = performance.now();
+        (function run(t){
+          var k = Math.min(1, (t - t0) / 900);
+          big.textContent = Math.round(112 * (1 - Math.pow(1 - k, 3)));
+          if (k < 1) requestAnimationFrame(run);
+        })(performance.now());
+      }
+    }
+    var max = document.documentElement.scrollHeight - vh;
+    var ph  = max > 0 ? Math.min(3, Math.floor(window.scrollY / max * 4)) : 0;
+    for (var j = 0; j < rails.length; j++) rails[j].classList.toggle('on', j === ph);
+  }
+  function onScroll(){ if (!queued){ queued = true; requestAnimationFrame(frame); } }
+  
+  function unlock(){ document.body.classList.add('loaded'); }
+  setTimeout(unlock, 60);
+  addEventListener('load', unlock);
+  if (reduce){
+    revs.forEach(function(e){ e.classList.add('in'); });
+    cells.forEach(function(e){ e.classList.add('lit'); });
+    big.textContent = '112';
+    unlock();
+  } else {
+    addEventListener('scroll', onScroll, {passive:true});
+    addEventListener('resize', onScroll);
+    addEventListener('load', frame);
+    document.addEventListener('visibilitychange', function(){ if (!document.hidden) frame(); });
+    frame();
+  }
+})();
+</script>
+<script>
+window.FOUR_I18N = {
+  locale:'ar-AE',
+  dotBad:'رمز DOT من أربعة أرقام: الأسبوع ثم السنة. 3223 تعني الأسبوع 32 من 2023.',
+  any:'أي',
+  headYour:'مقاس إطارك', headFront:'الإطارات الأمامية',
+  axLabel:function(ax,t){return t+' · '+(ax==='f'?'أمامي':'خلفي')},
+  waFront:'الأمامي: {s}', waRear:'الخلفي: {s}',
+  fdia:'القطر الأمامي', rdia:'القطر الخلفي', gap:'الفارق أمام وخلف',
+  matched:'الأمامي والخلفي بنفس قطر الدوران. لا ملاحظات.',
+  stagWarn:'قطر الدوران الأمامي والخلفي مختلف بوضوح. هذا طبيعي في بعض السيارات وخطأ في غيرها \u2014 أرسل لنا المقاسين ونتحقق منهما لموديل سيارتك.',
+  dia:'القطر الكلي', circ:'محيط الدوران', revs:'دورات لكل كيلومتر',
+  load:'مؤشر الحمولة', speed:'رمز السرعة', sidewall:'الجانب', rim:'الجنط',
+  mm:'مم', kg:'كجم', perSet:'{n} كجم للأربعة', upTo:'حتى {n} كم/س',
+  made:'صُنع في الأسبوع {w} من {y}',
+  age:function(y,m){
+    function f(n,one,two,few,many){
+      if(n===1) return one;
+      if(n===2) return two;
+      if(n>=3&&n<=10) return n+' '+few;
+      return n+' '+many;
+    }
+    var p=[];
+    if(y) p.push(f(y,'سنة واحدة','سنتان','سنوات','سنة'));
+    if(m||!y) p.push(f(m,'شهر واحد','شهران','أشهر','شهرًا'));
+    return 'العمر '+p.join(' و');
+  },
+  waMsg:'مرحبًا 4 Stroke، هل لديكم {code} متوفر؟',
+  waDot:'إطاراتي الحالية صُنعت في الأسبوع {w} من {y}.'
+};
+</script>
+<script src="../calc.js?v=1" defer></script>
+</body>
+</html>

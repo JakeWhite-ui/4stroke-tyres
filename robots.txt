@@ -1,0 +1,3 @@
+# Client preview. Not for search until the site is signed off.
+User-agent: *
+Disallow: /
